@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <!-- ข้อมูลส่วนตัวของผู้สมัคร -->
+     <h1 style="text-align: center;">ฟอร์มสมัครเรียนต่อระดับปริญญาตรี</h1>
+    <h3>ส่วนที่ 1: ข้อมูลส่วนตัวของผู้สมัคร</h3>
+    <label for="prefix">คำนำหน้าชื่อ:</label>
+    <select id="prefix" name="คำนำหน้าชื่อ">
+        <option value="นาย">นาย</option>
+        <option value="นาง">นาง</option>
+        <option value="นางสาว">นางสาว</option>
+    </select>
+    <label for="fname">ชื่อ:</label>
+    <input type="text" id="fname" name="fname">
+    <label for="lname">นามสกุล</label>
+    <input type="text" id="lname" name="lname">
+    <label for="THAI ID">รหัสบัตรประชาชน:</label>
+    <input type="text" maxlength="13">
+    <label for="date">วัน/เดือน/ปีเกิด:</label>
+    <input type="date" id="birthday" name="birthday">
+    <label for="age">อายุ:</label>
+    <input type="number">
+    <label for="gender">เพศ:</label>
+    <label for="male">ชาย</label>
+    <input type="radio" name="gender" id="male" value="Male">
+    <label for="female">หญิง</label>
+    <input type="radio" name="gender" id="female" value="Female">
+    <label for="not specified">ไม่ระบุ</label>
+    <input type="radio" name="gender" id="not specified" value="Not specified">
+    <label for="nationality">สัญชาติ:</label>
+    <input type="text" name="nationality" id="nationality">
+    <br><br>
+    <label for="ethnicity">เชื้อชาติ:</label>
+    <input type="text" name="ethnicity" id="ethnicity">
+    <label for="religion">ศาสนา</label>
+    <input type="text" name="religion" id="religion">
+    <label for="telephone">เบอร์โทรศัพท์</label>
+    <input type="tel" name="telephone" id="telephone" maxlength="10">
+    <label for="email">อีเมล:</label>
+    <input type="email" name="email" id="email">
+    <label for="address">ที่อยู่:</label>
+    <textarea name="address" id="address">กรอกที่อยู่</textarea>
+    <br><br><br>
+    <h3>ส่วนที่ 2: ข้อมูลการสมัครเรียน</h3>
+    <label for="Educational">วุฒิที่จบมา:</label>
+    <select name="Educational" id="Educational">
+        <option value="ม.6">ม.6</option>
+        <option value="ปวช.">ปวช.</option>
+        <option value="ปวส.">ปวส.</option>
+    </select>
+    <label for="nschool">ชื่อสถานศึกษาที่จบมา:</label>
+    <input type="text" name="nschool" id="nschool">
+    <label for="yGraduted">ปีที่จบ:</label>
+    <input type="number" name="yGraduted" id="yGraduted">
+    <label for="GPA">GPA:</label>
+    <input type="number" name="GPA" id="GPA" step="0.01">
+    <label for="branch">สาขาที่สมัคร:</label>
+    <select name="branch" id="branch">
+        <option value="IT">IT</option>
+        <option value="ITI">ITI</option>
+        <option value="INE">INE</option>
+        <option value="INET">INET</option>
+    </select>
+    <label for="major-reason">เหตุผลที่เลือกสาขา:</label>
+    <textarea name="major-reason" id="major-reason"></textarea>
+    <br><br><br>
+    <h3>ส่วนที่ 3: ประวัติการศึกษา</h3>
+    <h4>ประถมศึกษา</h4>
+    <label for="primary-nschool">ชื่อสถานศึกษา:</label>
+    <input type="text" name="primary-nschool" id="primary-nschool">
+    <label for="primary-province">จังหวัด:</label>
+    <input type="text" name="primary-province" id="primary-province">
+    <label for="primary-yApply">ปีที่เข้า:</label>
+    <input type="text" name="primary-yApply" id="primary-yApply">
+    <label for="primary-yGraduted">ปีที่จบ:</label>
+    <input type="text" name="primary-yGraduted" id="primary-yGraduted">
+    <label for="primary-Education">วุฒิที่ได้รับ:</label>
+    <input type="text" name="primary-Education" id="primary-Education">
+    <label for="primary-GPA">GPA</label>
+    <input type="number" name="primary-GPA" id="primary-GPA" step="0.01">
+    <h4>มัธยมต้น</h4>
+    <label for="lower-secondary-nschool">ชื่อสถานศึกษา:</label>
+    <input type="text" name="lower-secondary-nschool" id="lower-secondary-nschool">
+    <label for="lower-secondary-province">จังหวัด:</label>
+    <input type="text" name="lower-secondary-province" id="lower-secondary-province">
+    <label for="lower-secondary-yApply">ปีที่เข้า:</label>
+    <input type="text" name="lower-secondary-yApply" id="lower-secondary-yApply">
+    <label for="lower-secondary-yGraduted">ปีที่จบ:</label>
+    <input type="text" name="lower-secondary-yGraduted" id="lower-secondary-yGraduted">
+    <label for="lower-secondary-Education">วุฒิที่ได้รับ:</label>
+    <input type="text" name="lower-secondary-Education" id="lower-secondary-Education">
+    <label for="lower-secondary-GPA">GPA</label>
+    <input type="number" name="lower-secondary-GPA" id="lower-secondary-GPA" step="0.01">
+    <h4>มัธยมปลาย/ปวช./ปวส.</h4>
+    <label for="upper-secondary-nschool">ชื่อสถานศึกษา:</label>
+    <input type="text" name="upper-secondary-nschool" id="upper-secondary-nschool">
+    <label for="upper-secondary-province">จังหวัด:</label>
+    <input type="text" name="upper-secondary-province" id="upper-secondary-province">
+    <label for="upper-secondary-yApply">ปีที่เข้า:</label>
+    <input type="text" name="upper-secondary-yApply" id="upper-secondary-yApply">
+    <label for="upper-secondary-yGraduted">ปีที่จบ:</label>
+    <input type="text" name="upper-secondary-yGraduted" id="upper-secondary-yGraduted">
+    <label for="upper-secondary-Education">วุฒิที่ได้รับ:</label>
+    <input type="text" name="upper-secondary-Education" id="upper-secondary-Education">
+    <label for="upper-secondary-GPA">GPA</label>
+    <input type="number" name="upper-secondary-GPA" id="upper-secondary-GPA" step="0.01">
+    <h3>ส่วนที่ 4: เอกสารแนบ</h3>
+    <label for="attach-id">แนบไฟล์สำเนาบัตรประชาชน:</label>
+    <input type="file" name="attach-id" id="attach-id">
+    <br>
+    <label for="attach-education">แนบไฟล์วุฒิการศึกษา:</label>
+    <input type="file" name="attach-education" id="attach-education">
+    <h3>ส่วนที่ 5: ยืนยันและส่งฟอร์ม</h3>
+    <label for="accept-condition">ยอมรับเงื่อนไขทั้งหมด</label>
+    <input type="checkbox">
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</body>
+</html>
